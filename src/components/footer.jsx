@@ -14,8 +14,8 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section">
           <div className="logo-footer">
-            <img src={logo} alt="Logo" />
-            <h2>SCIEnT, NIT Trichy</h2>
+            <div><img src={logo} alt="Logo" /></div>
+            <div className="logoHeading"><h2>SCIEnT, NIT Trichy</h2></div>
           </div>
           <p className="tagline">
             An innovation hub for research , prototyping and bringing bold ideas
