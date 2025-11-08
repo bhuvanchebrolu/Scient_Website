@@ -58,6 +58,8 @@ import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import Inventive from "./inventive/Pages/Inventive";
 import InventivePage from "./inventive/Pages/InventivePage" ;
 import Members from "./pages/Members"
+import Contrive from "./contrive/Pages/Contrive";
+import ContrivePage from "./contrive/Pages/ContrivePage";
 const App = () => {
   return (
     <>
@@ -95,6 +97,8 @@ const App = () => {
         <Route path="/inventive" element={<Inventive />} />
         <Route path="/inventiveForm" element={<InventivePage/>} />
         <Route path="/inventory" element={<Inventory />} />
+        <Route path="/contrive" element={<Contrive/>}/>
+        <Route path="/contriveForm" element={<ContrivePage/>}/>
         <Route path="/Team" element={<Team/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/roombook" element={<Bookings />} />

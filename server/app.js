@@ -28,6 +28,7 @@ app.use("/api/clubs", require("./routes/projectRoutes"));
 app.use("/api/bookings", require("./routes/bookingRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 app.use("/api/inventiveForm", require("./inventive/inventiveFormRoutes")); // Add the new route
+app.use("/api/contriveForm",require("./contrive/contriveFormRoutes"))
 app.use("/api/inventory", require("./routes/inventoryRoutes"));
 app.use("/api/temp", require("./temporary/temp-route"));
 

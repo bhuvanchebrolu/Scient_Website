@@ -4,3 +4,4 @@ server/node_modules
 server/.env
 server/env
 server/inventive/credentials.json
+server/contrive/credentials.json
