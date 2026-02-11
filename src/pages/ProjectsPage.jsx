@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import ProjectCard from "../components/ProjectCard";
@@ -77,9 +77,7 @@ export default function ProjectsPage() {
         {/* Year Filter */}
         <div className="year-filter">
           <button
-            className={`year-btn ${
-              selectedYear === "ALL" ? "active" : ""
-            }`}
+            className={`year-btn ${selectedYear === "ALL" ? "active" : ""}`}
             onClick={() => setSelectedYear("ALL")}
           >
             ALL
@@ -87,9 +85,7 @@ export default function ProjectsPage() {
           {years.map((year) => (
             <button
               key={year}
-              className={`year-btn ${
-                selectedYear === year ? "active" : ""
-              }`}
+              className={`year-btn ${selectedYear === year ? "active" : ""}`}
               onClick={() => setSelectedYear(year)}
             >
               {year}
@@ -98,35 +94,39 @@ export default function ProjectsPage() {
         </div>
 
         {/* Projects by Year */}
-        {Object.keys(groupedProjects).map((year) => (
-          <div key={year} className="year-section">
-            <h2 className="year-title">{year}</h2>
-            <div className="project-scroll-container">
-              <button
-                onClick={() => scroll(year, "left")}
-                className="scroll-btn left"
-              >
-                <ChevronLeft />
-              </button>
+        {Object.keys(groupedProjects)
+          .sort((a, b) => b - a)
+          .filter((year) => selectedYear === "ALL" || Number(year) === selectedYear)
+          .map((year) => (
+    <div key={year} className="year-section">
+      <h2 className="year-title">{year}</h2>
+      <div className="project-scroll-container">
+        <button
+          onClick={() => scroll(year, "left")}
+          className="scroll-btn left"
+        >
+          <ChevronLeft />
+        </button>
 
-              <div
-                ref={(el) => (scrollRefs.current[year] = el)}
-                className="project-row"
-              >
-                {groupedProjects[year].map((project) => (
-                  <ProjectCard key={project._id} project={project} />
-                ))}
-              </div>
+        <div
+          ref={(el) => (scrollRefs.current[year] = el)}
+          className="project-row"
+        >
+          {groupedProjects[year].map((project) => (
+            <ProjectCard key={project._id} project={project} />
+          ))}
+        </div>
 
-              <button
-                onClick={() => scroll(year, "right")}
-                className="scroll-btn right"
-              >
-                <ChevronRight />
-              </button>
-            </div>
-          </div>
-        ))}
+        <button
+          onClick={() => scroll(year, "right")}
+          className="scroll-btn right"
+        >
+          <ChevronRight />
+        </button>
+      </div>
+    </div>
+  ))}
+
 
         {projects.length === 0 && (
           <p className="no-projects">No projects found for this club.</p>
@@ -136,4 +136,3 @@ export default function ProjectsPage() {
     </>
   );
 }
-

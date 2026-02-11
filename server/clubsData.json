@@ -3,161 +3,84 @@
     "name": "SPIDER",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738277/spider_a5kkpi.png",
     "projects": [
-      {
-        "name": "AI Drone System",
-        "description": "An autonomous drone that navigates using AI-based path planning algorithms.",
-        "year": 2025
-      },
-      {
-        "name": "Smart IoT Monitoring",
-        "description": "A sensor-based system to monitor and manage energy usage efficiently.",
-        "year": 2024
-      },
-       {
-        "name": "Smart IoT ",
-        "description": "A sensor-based system to monitor and manage energy usage efficiently.",
-        "year": 2024
-      },
-       {
-        "name": "Smart Monitoring",
-        "description": "A sensor-based system to monitor and manage energy usage efficiently.",
-        "year": 2024
-      }, {
-        "name": " IoT Monitoring",
-        "description": "A sensor-based system to monitor and manage energy usage efficiently.",
-        "year": 2024
-      }
-    ]
-  },
-  {
-    "name": "DELTA",
-    "logo": "https://example.com/delta-logo.png",
-    "projects": [
-      {
-        "name": "Virtual Campus Tour",
-        "description": "A 3D interactive campus visualization platform built for new students.",
-        "year": 2024
-      },
-      {
-        "name": "Online Learning Dashboard",
-        "description": "An integrated learning portal for real-time student performance analytics.",
-        "year": 2023
-      }
+      
     ]
   },
   {
     "name": "E-CELL",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738274/ecell_xe4thw.png",
     "projects": [
-      {
-        "name": "Startup Connect Portal",
-        "description": "A networking platform for student entrepreneurs to connect with mentors and investors.",
-        "year": 2023
-      }
+     
     ]
   },
-  {
-    "name": "GRAPHIQUE",
-    "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738613/graphique_iyepsd.png",
-    "projects": [
-      {
-        "name": "Design Automation Tool",
-        "description": "A creative automation tool for rapid UI prototyping using AI.",
-        "year": 2024
-      },
-      {
-        "name": "Interactive Portfolio Builder",
-        "description": "A web-based platform for students to design and showcase personal portfolios.",
-        "year": 2023
-      }
-    ]
-  },
+
   {
     "name": "FORCE HYPERLOOP",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738611/fh_moi7lo.jpg",
     "projects": [
-      {
-        "name": "Magnetic Levitation System",
-        "description": "A prototype for low-friction magnetic transport simulation.",
-        "year": 2025
-      }
     ]
   },
   {
     "name": "NAKSHATRA",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738613/naksh_nzyhog.png",
     "projects": [
-      {
-        "name": "Satellite Tracking Interface",
-        "description": "An interactive dashboard for satellite data visualization and trajectory prediction.",
-        "year": 2024
-      }
     ]
   },
   {
     "name": "DESIGNERS CONSORTIUM",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738274/dc_vixubi.png",
     "projects": [
-      {
-        "name": "3D Product Visualizer",
-        "description": "A 3D modeling platform for industrial design and visualization.",
-        "year": 2024
-      }
+      
     ]
   },
   {
     "name": "RMI",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738275/rmi_ir465p.png",
     "projects": [
-      {
-        "name": "AI Vision Bot",
-        "description": "An intelligent robotic system with computer vision capabilities.",
-        "year": 2023
-      }
+      
     ]
   },
   {
     "name": "PSI",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738274/psi_atd3er.png",
     "projects": [
-      {
-        "name": "Data Security Analyzer",
-        "description": "A project focused on real-time network vulnerability scanning.",
-        "year": 2023
-      }
+     
     ]
   },
   {
     "name": "EVER",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738274/ever_sxrmnm.jpg",
     "projects": [
-      {
-        "name": "Smart Grid Simulator",
-        "description": "A renewable energy simulation system for distributed grid optimization.",
-        "year": 2023
-      }
     ]
   },
   {
     "name": "3D AERODYNAMICS",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738274/3d_yzpfn9.png",
     "projects": [
-      {
-        "name": "CFD Simulation Suite",
-        "description": "A computational tool for aerodynamic flow analysis of 3D models.",
-        "year": 2024
-      }
+      
     ]
   },
   {
     "name": "DATABYTE",
     "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1759738273/db_vm4fxe.jpg",
     "projects": [
-      {
-        "name": "Data Analytics Dashboard",
-        "description": "A data visualization dashboard for institutional analytics.",
-        "year": 2024
-      }
+      
+    ]
+  },
+  {
+    "name": "ORBIT",
+    "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1762335171/Screenshot_2025-11-05_150056_z5h7hw.png",
+    "projects": [
+      
+    ]
+  },
+  {
+    "name": "CATALYST",
+    "logo": "https://res.cloudinary.com/dsppzymyc/image/upload/v1762335321/catalyst.ed7402ef1b5d2cb123cf_maxks4.jpg",
+    "projects": [
+      
     ]
   }
+  
+
 ]

@@ -81,10 +81,10 @@ const App = () => {
         {/* Club Listing */}
         <Route path="/clubs" element={<ClubsPage />} />
 
-        {/* Club Projects Listing */}
+        {/* Club Projects Listing   */}
         <Route path="/clubs/:name/projects" element={<ProjectsPage />} />
 
-        {/* Individual Project Page */}
+        {/* Individual Project Page   */}
         <Route
           path="/clubs/:name/projects/:projectId" element={<ProjectDetailsPage />}
         />
@@ -145,5 +145,6 @@ const App = () => {
     </>
   );
 };
+//..
 
 export default App;

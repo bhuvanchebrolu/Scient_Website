@@ -24,7 +24,6 @@
   font-size: 2.5rem;
   font-weight: 900;
   color: #ffd700;
-  text-shadow: 0 0 8px #ffd700, 0 0 20px #ffcc00;
   letter-spacing: 1px;
 }
 
@@ -84,7 +83,6 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: #ffd700;
-  text-shadow: 0 0 6px #ffcc00;
 }
 
 /* Scroll Buttons and Project Row */

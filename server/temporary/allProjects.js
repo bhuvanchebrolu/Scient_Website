@@ -249,7 +249,46 @@ const rmiProjects = [
         filename:"hidq_rmi_zr2hfg"
     }
   },
-
+{
+    name: "Jaguar",
+    description:
+      "Jaguar (Just a Gaited Unmanned Autonomous Robot) is a quadruped robot inspired by biological locomotion, designed for rugged terrain navigation and environmental sensing. It integrates an ESP-32 microcontroller for real-time processing, bus servos for high-torque joint actuation, and an IMU for balance and orientation. Equipped with LiDAR for mapping and obstacle detection, Jaguar supports adaptive gait control and autonomous navigation, aimed at applications such as search and rescue, exploration, and autonomous patrolling.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762335923/WhatsApp_Image_2025-10-31_at_00.06.41_7e252a5b_xvwpp0.jpg",
+      filename: "jaguar_rmi"
+    }
+  },
+  {
+    name: "ROVIO",
+    description:
+      "ROVIO (Remotely Operated Underwater Vehicle for Inspection and Operation) is a 4-DOF open-frame underwater robot built for inspection and operational tasks. It uses four thrusters for multi-axis movement and features an acrylic hull with waterproofing measures to protect internal electronics. A Raspberry Pi processes camera feeds for obstacle detection and inspection, while the system maintains wireless communication via a buoy tether. The design improves on RMI’s previous underwater vehicle by enhancing waterproofing and modularity for reliable underwater performance.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762335939/WhatsApp_Image_2025-10-31_at_00.06.59_f19ceb18_humbgs.jpg",
+      filename: "rovio_rmi"
+    }
+  },
+  {
+    name: "EdVisor",
+    description:
+      "EdVisor is a smart headband developed to assist visually impaired students in classrooms. Using a camera and Jetson Nano, it employs Optical Character Recognition (OCR) and Vision-Language Models (VLMs) to interpret text and diagrams, converting them into audio through a multilingual Text-to-Speech service. This system enables visually impaired learners to access classroom content without relying solely on Braille, fostering inclusivity and accessibility in education.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762335947/WhatsApp_Image_2025-10-31_at_00.07.18_9b2dab20_k1bozl.jpg",
+      filename: "edvisor_rmi"
+    }
+  },
+  {
+    name: "SLITHER",
+    description:
+      "SLITHER (Snake-like Locomotion with Intelligent Terrain Handling and Environmental Response) is an amphibious, bio-inspired robot featuring 8 degrees of freedom and capable of multiple locomotion modes, including slithering, rectilinear, sidewinding, and swimming. Each module has its own high-torque servo and battery, while the head module integrates an ESP32 camera for real-time data collection. With terrain adaptability and amphibious mobility, SLITHER is designed for disaster inspection and industrial monitoring applications.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762335966/WhatsApp_Image_2025-10-31_at_00.08.32_f1a3479b_ssoql8.jpg",
+      filename: "slither_rmi"
+    }
+  }
 
 
 ];
@@ -405,7 +444,47 @@ const everProjects=[
             url:"https://res.cloudinary.com/dsppzymyc/image/upload/v1761156417/autoSelectionIn3Phase_ever_zkarqc.png",
             filename:"autoSelectionIn3Phase_ever_zkarqc"
         }
+    },
+     {
+    name: "Participation in Yamaha Motors Problem Statement",
+    description:
+      "The EVER team participated in a technical challenge by Yamaha Motors, requiring innovative and practical engineering solutions aligned with industrial objectives. The team conducted research, feasibility studies, and partial prototyping, focusing on performance optimization and cost efficiency. This project enhanced technical expertise and offered valuable industry exposure, connecting academic learning with real-world problem-solving.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dummy_url/image/upload/v1/yamaha_ever.png",
+      filename: "yamaha_ever"
     }
+  },
+  {
+    name: "Fabrication and Chassis Upgrade with Roll-Over Protection",
+    description:
+      "The team fabricated a custom go-kart chassis emphasizing strength, durability, and weight optimization. Using precision manufacturing techniques and high-quality materials, the chassis was enhanced with a Roll-Over Protection (ROP) system designed through stress analysis to meet safety and competition standards. This upgrade significantly improved the kart’s safety and structural integrity while preserving performance efficiency.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762336320/WhatsApp_Image_2025-11-02_at_13.26.33_f7d60e27_rdven9.jpg",
+      filename: "chassis_ever"
+    }
+  },
+  {
+    name: "Comprehensive Design Report of EVER Go Kart in IEEE Format",
+    description:
+      "The club compiled a Complete Design Report of the electric go-kart in IEEE format, encompassing all mechanical and structural design aspects, including chassis, suspension, steering, braking, and ergonomics. The report also detailed stress analysis, CAD models, and engineering drawings, serving as a technical record and reference for future iterations and design improvements.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762336311/WhatsApp_Image_2025-11-02_at_13.26.37_c8f3665e_acomfk.jpg",
+      filename: "designreport_ever"
+    }
+  },
+  {
+    name: "Electrical Control System Design for EVER Go Kart",
+    description:
+      "The team designed the Electrical Control System integrating hardware and software for efficient operation. This included battery management, motor controller setup, throttle and brake interfacing, and wiring harness design. Emphasis was placed on safety through emergency cut-offs and overcurrent protection, and the system underwent extensive testing to ensure reliability. This showcased the club’s growing expertise in electric vehicle power electronics and control engineering.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dummy_url/image/upload/v1/controlsystem_ever.png",
+      filename: "controlsystem_ever"
+    }
+  }
 ]
 
 const dcProjects=[
@@ -519,7 +598,66 @@ const dcProjects=[
       filename:"recTube_dc_qsukqh"
     }
   },
-
+    {
+    name: "Visionaries",
+    description:
+      "Visionaries developed Echotono, a non-contact tonometer for glaucoma detection using ultrasound amplitude modulation. The device measures intraocular pressure (IOP) without physical contact, reducing irritation and recurring costs. Ultrasound waves and analog signal filters process readings, while an Arduino-based system computes pressure from changes in acoustic impedance. With a chin rest for stability, the design emphasizes accuracy, portability, and affordability for wider accessibility in healthcare diagnostics.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762337309/WhatsApp_Image_2025-11-05_at_01.25.07_7cec0a1c_lppo0n.jpg",
+      filename: "visionaries_dc"
+    }
+  },
+  {
+    name: "5-Man Cell",
+    description:
+      "Developed to enhance the durability of Bajaj’s electric two-wheeler motors in harsh conditions, this project focused on minimizing torque ripple and vibrations caused by magnetic flux variations in BLDC motors. The team implemented thermoacoustic cooling and topology optimization to reduce heat and mechanical stress, achieving 25% less torque ripple. Elastomer-based bushings further improved vibration control, extending component lifespan and reliability in electric vehicles.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762337137/WhatsApp_Image_2025-11-05_at_01.25.49_c23dea3f_gensip.jpg",
+      filename: "5mancell_dc"
+    }
+  },
+  {
+    name: "SandTech",
+    description:
+      "SandTech is an autonomous cleaning robot for vertical tiled surfaces such as bathroom and kitchen walls. It uses suction adhesion, controlled fluid spraying, and mechanical scrubbing to remove stains efficiently while minimizing water use. Equipped with time-of-flight sensors and mapping algorithms, it navigates independently and ensures complete coverage. The robot combines automation, precision cleaning, and water conservation for domestic applications.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dummy_url/image/upload/v1/sandtech_dc.pnghttps://res.cloudinary.com/dsppzymyc/image/upload/v1762337366/WhatsApp_Image_2025-11-05_at_01.26.07_a2f9edfb_vyegj3.jpg",
+      filename: "sandtech_dc"
+    }
+  },
+  {
+    name: "Protominds",
+    description:
+      "Protominds developed a compact, multi-functional agricultural machine for sustainable farming. The device performs weed removal, targeted fertilization, and on-site manure generation. It employs a reciprocating pump powered by a radial fan to spray fertilizers precisely, guided by real-time soil nutrient data from an NPK sensor. Rotating blades uproot weeds and prevent regrowth, reducing labor and chemical dependency while enhancing crop yield.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762337144/WhatsApp_Image_2025-11-05_at_01.26.31_4395377a_lud8b5.jpg",
+      filename: "protominds_dc"
+    }
+  },
+  {
+    name: "Greenthumbs",
+    description:
+      "Greenthumbs created an integrated post-harvest processing unit for groundnut farmers. The system automates shelling, cleaning, sorting, and drying using a gravity separator, motorized decorticator, and vibrational sieve. Cleaned kernels are washed and dried via a solar-powered fan conveyor to achieve optimal moisture content. The compact, low-cost setup enhances efficiency, minimizes kernel damage, and provides high-quality output suitable for small-scale farmers.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762337148/WhatsApp_Image_2025-11-05_at_01.26.46_2e4cd26a_aecis6.jpg",
+      filename: "greenthumbs_dc"
+    }
+  },
+  {
+    name: "Drainease",
+    description:
+      "Drainease is a soil-aeration system designed to rehabilitate compacted deep soil after floods or droughts. It uses a detonation tube to generate controlled shock waves, improving soil porosity and restoring air-water balance for sustainable agriculture. The device’s simple auger-based setup and pulsed detonation mechanism enable effective deep-soil loosening, enhancing microbial activity and crop growth in degraded farmland.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762337150/WhatsApp_Image_2025-11-05_at_01.26.55_1efb1b47_lkttli.jpg",
+      filename: "drainease_dc"
+    }
+  }
   
 
 ]
@@ -635,9 +773,89 @@ const spiderProjects=[
     }
 
   },
+   {
+    "name": "Vault X",
+    "description": "A blockchain-powered financial ecosystem that integrates decentralized payments, NFT utilities, and token-based incentives. Vault X simplifies DeFi adoption by offering seamless crypto transactions and innovative financial services within a unified Web3 platform.",
+    "year": 2025,
+    "image": {
+      "url": "https://res.cloudinary.com/dsppzymyc/image/upload/v1761931582/WhatsApp_Image_2025-10-31_at_00.04.57_da5578f0_tedtog.jpg",
+      "filename": "vaultx_spider_2025"
+    }
+  },
+  {
+    "name": "Ghost ID",
+    "description": "A decentralized identity system utilizing Zero-Knowledge Proofs (ZKPs) to enable secure and private identity verification without exposing personal data. It combines ZK-SNARKs, DID protocols, and blockchain-based validation for enhanced digital privacy.",
+    "year": 2025,
+    "image": {
+      "url": "https://res.cloudinary.com/dsppzymyc/image/upload/v1761931598/WhatsApp_Image_2025-10-31_at_00.04.57_589de8c0_bxylss.jpg",
+      "filename": "ghostid_spider_2025"
+    }
+  },
 
+  {
+    "name": "Lynx 2.0",
+    "description": "A unified campus management platform integrating authentication, notifications, and administrative updates. Lynx 2.0 enhances digital security and performance, providing a smoother and more efficient campus digital experience.",
+    "year": 2025,
+    "image": {
+      "url": "https://res.cloudinary.com/dsppzymyc/image/upload/v1761931616/WhatsApp_Image_2025-10-31_at_00.04.57_114d4a34_sn7ndz.jpg",
+      "filename": "lynx2_spider_2025"
+    }
+  },
+
+  {
+    name: "Continual Learning Research",
+    description: "A deep learning research initiative studying continual learning and methods to reduce catastrophic forgetting across vision tasks, aiming to improve adaptive and lifelong AI models.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1761931610/WhatsApp_Image_2025-10-31_at_00.04.57_0e0e3f2b_o0nwgi.jpg",
+      filename: "continuallearning_spider_2025"
+    }
+  },
+  
   
 ]
+const orbitProjects = [
+  {
+    name: "Solid Rocket Motor",
+    description:
+      "The team designed an M-class solid rocket motor, focusing on the casing, nozzle, liners, closures, and O-rings. Aluminum 6061-T6 was selected for the casing due to its strength, machinability, and cost efficiency. The motor uses phenolic liners for insulation and a graphite-inserted nozzle for high-temperature endurance. Detailed calculations, CAD drawings, and simulations were conducted to verify performance, with attention to safety factors and material selection. Simulation results were used to optimize nozzle geometry and flow characteristics.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762337529/WhatsApp_Image_2025-11-05_at_01.32.43_4027c4c1_euwlnl.jpg",
+      filename: "solid_rocket_motor_orbit"
+    }
+  },
+  {
+    name: "Spaceport America Rocket Design",
+    description:
+      "This project involves the complete design of a rocket for the Spaceport America Cup competition, covering the nose cone, body tube, fins, and recovery system. Fiberglass was selected for both the nose cone and body tube due to its lightweight, strength, and affordability. The fins were designed from G10 fiberglass for aerodynamic stability, while the parachute system uses dual deployment for safe recovery. The team used analytical methods and CFD simulations to optimize drag, stability, and structure for subsonic to supersonic flight.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762337473/WhatsApp_Image_2025-11-05_at_01.31.56_3db302ec_rivsia.jpg",
+      filename: "spaceport_rocket_orbit"
+    }
+  },
+  {
+    name: "Motor Test Stand",
+    description:
+      "The team developed a vertical motor test stand capable of testing M-class solid motors up to 9 kN thrust. The design emphasizes structural stability, load handling, and safety under extreme conditions. Aluminum 6061-T6 T-slot extrusions were chosen for the frame to ensure strength and lightweight construction. The system incorporates adjustable motor clamps, vibration damping, and load cell instrumentation for thrust measurement. Calculations and CAD models guided the design, with provisions for future upgrades and multi-load cell configurations.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762337404/WhatsApp_Image_2025-11-05_at_01.30.06_d7113d60_giakok.jpg",
+      filename: "motor_test_stand_orbit"
+    }
+  },
+  {
+    name: "Propellant Development",
+    description:
+      "The team analyzed and selected suitable propellants for amateur rocketry, comparing oxidizers and fuels based on safety, cost, and performance. Potassium nitrate (KNO₃) with sucrose (sugar) was chosen for its affordability and safety, avoiding hazardous or regulated oxidizers like ammonium perchlorate. The chosen mixture ratio was 64% KNO₃ and 36% sucrose. The report also discussed factors affecting burn rate, particle size, and manufacturing limitations, laying the groundwork for safe propellant preparation and testing.",
+    year: 2025,
+    image: {
+      url: "https://res.cloudinary.com/dsppzymyc/image/upload/v1762337448/WhatsApp_Image_2025-11-05_at_01.30.55_8003ef54_hesao6.jpg",
+      filename: "propellant_development_orbit"
+    }
+  }
+];
 module.exports={
   rmiProjects,
   threeDProjects,
@@ -647,5 +865,6 @@ module.exports={
   everProjects,
   ecellProjects,
   spiderProjects,
-  dcProjects
+  dcProjects,
+  orbitProjects
 }

@@ -34,11 +34,35 @@
   }
 } */
 
-/* Grid layout */
 .clubs-grid {
-  display: grid;
-  gap: 1.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  justify-items: center;
-  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers all rows including last */
+  gap: 2rem;
+  padding: 0 2rem;
 }
+
+/* Each club card width — adjust as needed */
+.clubs-grid > * {
+  flex: 1 1 calc(20% - 2rem); /* ✅ 5 cards per row (100% / 5 = 20%) */
+  max-width: 220px;
+  min-width: 180px;
+}
+
+/* Medium screens (like tablets): 3 cards per row */
+@media (max-width: 1024px) {
+  .clubs-grid > * {
+    flex: 1 1 calc(33.33% - 2rem);
+  }
+}
+
+/* Small screens (phones): 1 card per row */
+@media (max-width: 600px) {
+  .clubs-grid > * {
+    flex: 1 1 100%;
+    max-width: 300px; /* optional: to keep it neat */
+  }
+}
+
+
+

@@ -5,33 +5,33 @@ exports.getProject = async (req, res) => {
   try {
     const { name, projectId } = req.params;
 
-    // 1️⃣ Find the club (case-insensitive match)
+    // 1️⃣ Find club by name (case-insensitive)
     const club = await Club.findOne({
       name: { $regex: new RegExp(`^${name}$`, "i") },
-    }).populate("projects");
+    });
 
     if (!club) {
       return res.status(404).json({ error: "Club not found" });
     }
 
-    // 2️⃣ Find the requested project from club.projects
-    const project = club.projects.find(
-      (p) => p._id.toString() === projectId
-    );
+    // 2️⃣ Get the main project directly
+    const project = await Project.findOne({ _id: projectId, club: club._id });
 
     if (!project) {
       return res.status(404).json({ error: "Project not found" });
     }
 
-    // 3️⃣ Find other projects from same club in same year
-    const otherProjects = club.projects.filter(
-      (p) => p.year === project.year && p._id.toString() !== project._id.toString()
-    );
+    // 3️⃣ Fetch other projects of same club and same year (excluding this one)
+    const otherProjects = await Project.find({
+      club: club._id,
+      year: project.year,
+      _id: { $ne: project._id },
+    });
 
-    // 4️⃣ Return data
+    // 4️⃣ Send data
     res.json({
       project,
-      otherProjects: otherProjects || [],
+      otherProjects,
       message:
         otherProjects.length === 0
           ? "No other projects found for this year."
@@ -42,3 +42,4 @@ exports.getProject = async (req, res) => {
     res.status(500).json({ error: "Server error. Please try again later." });
   }
 };
+
